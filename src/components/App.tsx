@@ -43,8 +43,7 @@ function App() {
         <div>
             <ImageSelectorButton setImageFile={setImageFile} imageFile={imageFile} />
             {
-                !imageFile ? 
-                <Camera predictCanvas={predictCanvas} predictions={predictions} /> :
+                imageFile && 
                 <StaticImage predictCanvas={predictCanvas} image={imageFile} setImageFile={setImageFile} />
             }
             <Prediction predictions={predictions}/>
