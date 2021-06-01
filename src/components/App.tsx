@@ -43,10 +43,12 @@ function App() {
         <div>
             <ImageSelectorButton setImageFile={setImageFile} imageFile={imageFile} />
             {
-                imageFile && 
+                imageFile ? <>
                 <StaticImage predictCanvas={predictCanvas} image={imageFile} setImageFile={setImageFile} />
+                <Prediction predictions={predictions}/>
+                </> : <h2 style={{marginLeft: "80px"}}>&lt;-- upload photo</h2>
             }
-            <Prediction predictions={predictions}/>
+            
         </div>
     );
 }
