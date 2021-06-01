@@ -1,5 +1,4 @@
 import React, {useCallback, useState} from 'react';
-import Camera from './camera/Camera';
 import Prediction from './prediction/Prediction';
 import ImageSelectorButton from './staticImage/ImageSelectorButton';
 import StaticImage from './staticImage/StaticImage';
